@@ -1,0 +1,28 @@
+/* Contenedor principal: centra el logo en la pantalla */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  /* Círculo que contiene el logo */
+  .logo-circle {
+    position: relative;
+    width: 150px; /* Ajusta el tamaño del círculo */
+    height: 150px;
+    background-color: white; /* Fondo blanco para el círculo */
+    border-radius: 50%; /* Hace que el contenedor sea un círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Imagen del logo */
+  .logo-image {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: 100px;
+    object-fit: contain;
+    filter: drop-shadow(1px 1px 1px #000000);
+  }
+  
