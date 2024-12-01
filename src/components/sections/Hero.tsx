@@ -19,7 +19,7 @@ export function Hero() {
             {/* Logo de la empresa */}
             <div className="mb-4">
               <img 
-                src={image} 
+                src="https://www.dropbox.com/scl/fi/9i2e3kgaha0ebc87khyav/Logo.png?rlkey=6jsyet9sujpw8itxax1o0wqwj&st=arp8afvs&raw=1" 
                 alt="Logo" 
                 className="mx-auto" 
                 style={{ height: '450px', marginBottom: '10px', filter: 'drop-shadow(0 4px 1px rgba(0, 0, 0, 1))' }} 

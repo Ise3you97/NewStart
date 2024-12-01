@@ -8,42 +8,42 @@ const services = [
     description: 'Crea sitios web modernos y optimizados, desde portafolios hasta e-commerce.',
     icon: Code2,
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800',
-    minPrice: 499, // Precio mínimo del servicio
+    minPrice: 90, // Precio mínimo del servicio
   },
   {
     title: 'Aplicaciones Móviles',
     description: 'Desarrollo de apps nativas o multiplataforma para iOS y Android.',
     icon: Smartphone,
     image: 'https://images.unsplash.com/photo-1538338947140-9d5c48f3e6c9?auto=format&fit=crop&q=80&w=800',
-    minPrice: 799, // Precio mínimo del servicio
+    minPrice: 120, // Precio mínimo del servicio
   },
   {
     title: 'Aplicaciones Full-Stack',
     description: 'Construcción de aplicaciones completas con backend y frontend integrados.',
     icon: Layers,
     image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
-    minPrice: 999, // Precio mínimo del servicio
+    minPrice: 200, // Precio mínimo del servicio
   },
   {
     title: 'APIs y Automatización',
     description: 'Desarrollo de APIs personalizadas y automatización de procesos empresariales.',
     icon: Server,
     image: 'https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&q=80&w=800',
-    minPrice: 399, // Precio mínimo del servicio
+    minPrice: 150, // Precio mínimo del servicio
   },
   {
     title: 'Tiendas Online',
     description: 'Configuración e integración de plataformas de comercio electrónico.',
     icon: ShoppingCart,
     image: 'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=800',
-    minPrice: 799, // Precio mínimo del servicio
+    minPrice: 120, // Precio mínimo del servicio
   },
   {
     title: 'Soporte Técnico y Mantenimiento',
     description: 'Optimización, resolución de errores y actualizaciones para tus sistemas.',
     icon: Wrench,
     image: 'https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&q=80&w=800',
-    minPrice: 199, // Precio mínimo del servicio
+    minPrice: 50, // Precio mínimo del servicio
   },
 ];
 

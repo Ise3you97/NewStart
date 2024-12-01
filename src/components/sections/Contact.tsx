@@ -66,7 +66,11 @@ export function Contact() {
             <div className="mt-8">
               {/* Aquí se reemplaza el correo y teléfono con imágenes */}
               <div className="flex items-center space-x-4">
-                <img src="/src/Images/Info.png" alt="Información de contacto" className="w-100 h-100" />
+                <img
+                  src="https://www.dropbox.com/scl/fi/yv175312bf8ho6fum9owd/Info.png?rlkey=9bll5n7xophc9ebhpht0zrhyn&st=teevogiu&raw=1"
+                  alt="Información de contacto"
+                  className="w-100 h-100"
+                />
               </div>
             </div>
           </div>
