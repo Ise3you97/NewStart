@@ -12,18 +12,18 @@ export function Header() {
   }, []);
 
   return (
-    <header className="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-20">
+    <header className="fixed w-100 bg-white bg-opacity-95 backdrop-blur-sm z-50 border-bottom border-gray-100">
+      <div className="container-fluid">
+        <div className="d-flex justify-content-between align-items-center py-3">
           {/* Left section for desktop */}
-          <div className="hidden md:flex items-center space-x-8">
-            <NavLink href="#mission">Nosotros</NavLink>
-            <NavLink href="#solutions">Servicios</NavLink>
-            <NavLink href="#features">Características</NavLink>
+          <div className="d-none d-md-flex align-items-center">
+            <NavLink href="#mission" className="me-4">Nosotros</NavLink>
+            <NavLink href="#solutions" className="me-4">Servicios</NavLink>
+            <NavLink href="#features" className="me-4">Características</NavLink>
           </div>
 
           {/* Center logo */}
-          <div className="flex-shrink-0 flex justify-center items-center">
+          <div className="flex-shrink-0 d-flex justify-content-center align-items-center">
             <motion.a
               href="#"
               initial={{ opacity: 0, y: -20 }}
@@ -35,12 +35,12 @@ export function Header() {
           </div>
 
           {/* Right section for desktop */}
-          <div className="hidden md:flex items-center space-x-8">
-            <NavLink href="#pricing">Precios</NavLink>
-            <NavLink href="#contact">Contacto</NavLink>
+          <div className="d-none d-md-flex align-items-center">
+            <NavLink href="#pricing" className="me-4">Precios</NavLink>
+            <NavLink href="#contact" className="me-4">Contacto</NavLink>
             <motion.a
               href="#contact" // Redirige a la sección de contacto
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+              className="btn btn-primary px-4 py-2 rounded-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -49,10 +49,10 @@ export function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="d-md-none">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-gray-900"
+              className="btn btn-link text-dark"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -60,16 +60,17 @@ export function Header() {
           </div>
         </div>
       </div>
+
       {/* Mobile menu */}
       {isMenuOpen && (
         <motion.div
-          className="md:hidden absolute top-0 left-0 w-full h-screen bg-white z-50"
+          className="d-md-none position-absolute top-0 start-0 w-100 h-100 bg-white z-50 overflow-auto"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="p-3">
             <NavLink href="#mission" mobile>
               Nosotros
             </NavLink>
@@ -86,11 +87,11 @@ export function Header() {
               Contacto
             </NavLink>
           </div>
-          <div className="pt-4 pb-3 border-t border-gray-200">
+          <div className="pt-3 pb-3 border-top">
             <div className="px-2">
               <motion.a
                 href="#contact" // Redirige a la sección de contacto
-                className="w-full text-center px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                className="w-100 btn btn-primary text-center"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -100,7 +101,6 @@ export function Header() {
           </div>
         </motion.div>
       )}
-
     </header>
   );
 }

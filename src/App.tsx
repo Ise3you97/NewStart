@@ -7,8 +7,8 @@ import { Solutions } from './components/sections/Solutions';
 import { Features } from './components/sections/Features';
 import { Pricing } from './components/sections/Pricing';
 import { Contact } from './components/sections/Contact';
-import { WhatsAppButton } from './components/ui/WhatsAppButton';
 import { Footer } from './components/layout/Footer';  // Importar el Footer
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -22,7 +22,6 @@ function App() {
         <Pricing />
         <Contact />
       </main>
-      <WhatsAppButton />
       <Footer /> {/* Agregar Footer al final */}
     </div>
   );
