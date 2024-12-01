@@ -12,7 +12,7 @@ import { Footer } from './components/layout/Footer';  // Importar el Footer
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="">
       <Header />
       <main>
         <Hero />

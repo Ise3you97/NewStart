@@ -15,7 +15,7 @@ export function Header() {
     <header className="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
-          {/* Left section */}
+          {/* Left section for desktop */}
           <div className="hidden md:flex items-center space-x-8">
             <NavLink href="#mission">Nosotros</NavLink>
             <NavLink href="#solutions">Servicios</NavLink>
@@ -23,7 +23,7 @@ export function Header() {
           </div>
 
           {/* Center logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex justify-center items-center">
             <motion.a
               href="#"
               initial={{ opacity: 0, y: -20 }}
@@ -34,7 +34,7 @@ export function Header() {
             </motion.a>
           </div>
 
-          {/* Right section */}
+          {/* Right section for desktop */}
           <div className="hidden md:flex items-center space-x-8">
             <NavLink href="#pricing">Precios</NavLink>
             <NavLink href="#contact">Contacto</NavLink>
@@ -53,20 +53,21 @@ export function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-gray-900"
+              aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </div>
-
       {/* Mobile menu */}
       {isMenuOpen && (
         <motion.div
-          className="md:hidden"
+          className="md:hidden absolute top-0 left-0 w-full h-screen bg-white z-50"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
             <NavLink href="#mission" mobile>
@@ -99,6 +100,7 @@ export function Header() {
           </div>
         </motion.div>
       )}
+
     </header>
   );
 }
