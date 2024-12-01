@@ -1,0 +1,40 @@
+/* header.css */
+
+/* Ajustes para el contenedor del navbar */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem; /* Añade espacio a los lados */
+    width: 100%;
+  }
+  
+  /* Ajustes para los elementos del navbar (en pantallas más grandes) */
+  .navbar-items {
+    display: flex;
+    gap: 1.5rem; /* Espaciado entre los elementos */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estilos específicos para el mobile */
+  @media (max-width: 767px) {
+    .navbar-items {
+      gap: 1rem; /* Reduce el espacio entre los elementos en móvil */
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem; /* Añade espacio encima del menú */
+    }
+  
+    .navbar-container {
+      padding: 0 0.5rem; /* Reduce el padding en dispositivos móviles */
+    }
+  
+    .navbar-logo {
+      margin: 0 auto;
+    }
+  }
+  
